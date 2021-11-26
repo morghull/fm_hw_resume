@@ -5,12 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <section><img src="" alt="profile photo"></section>
-    <section>about</section>
-    <section>skills</section>
-    <section>experience</section>
+    <div class="section-wrapper">
+      <section class="section card">
+        <img
+          class="card-profilePhoto"
+          src="./assets/images/placeholder.jpg"
+          alt="profile photo"
+        />
+        <!-- <img class="card-profilePhoto" src="./assets/images/profile-photo-1.jpg" alt="profile photo" /> -->
+        <h1 class="card-profileName">vladyslav baidak</h1>
+        <section class="card-contacts">
+          <a class="card-contact" href="mailto:vladyslav.baidak@sweetcv.com"
+            >vladyslav.baidak@sweetcv.com</a
+          >
+          <a class="card-contact" href="tel:+380989999999"
+            >+38(098) 999-99-99</a
+          >
+          <address class="card-contact">Kyiv, Ukraine</address>
+        </section>
+      </section>
+      <section class="section about">about</section>
+      <section class="section skills">skills</section>
+      <section class="section experience">experience</section>
+    </div>
   </body>
 </html>

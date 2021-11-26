@@ -1,0 +1,78 @@
+:root {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --main-font-color: #888;
+  --heading-font-color: #000;
+}
+/*
+576px
+768px
+992px
+1200px
+*/
+* {
+  box-sizing: border-box;
+}
+.section-wrapper {
+  width: 80vw;
+  margin: 3rem auto;
+}
+.section {
+  width: 100%;
+}
+.card {
+  --photo-size: 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.card-profilePhoto {
+  width: var(--photo-size);
+  height: var(--photo-size);
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.card-profileName {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--heading-font-color);
+  text-transform: capitalize;
+}
+.card-contacts {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  color: var(--main-font-color);
+}
+.card-contact {
+  display: inline-block;
+  padding: 0.2rem;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+  line-height: 0.4rem;
+}
+.card-contact + .card-contact {
+  border-left: 1px solid var(--main-font-color);
+}
+@media screen and (max-width: 576px) {
+  .card-contacts {
+    flex-flow: column nowrap;
+  }
+  .card-contact {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+  .card-contact + .card-contact {
+    border-left: none;
+  }
+}
+.about {
+}
+.skills {
+}
