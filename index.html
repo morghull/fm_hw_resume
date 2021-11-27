@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -16,7 +17,7 @@
           alt="profile photo"
         />
         <!-- <img class="card-profilePhoto" src="./assets/images/profile-photo-1.jpg" alt="profile photo" /> -->
-        <h1 class="card-profileName">vladyslav baidak</h1>
+        <h1 class="card-profileName important-text">vladyslav baidak</h1>
         <section class="card-contacts">
           <a class="card-contact" href="mailto:vladyslav.baidak@sweetcv.com"
             >vladyslav.baidak@sweetcv.com</a
@@ -27,9 +28,110 @@
           <address class="card-contact">Kyiv, Ukraine</address>
         </section>
       </section>
-      <section class="section about">about</section>
-      <section class="section skills">skills</section>
-      <section class="section experience">experience</section>
+      <section class="section about">
+        <div class="section-heading">
+          <span>Lead Backend Engineer with 8+ years of experience</span>
+          <ul class="social-links">
+            <li class="social-link">
+              <a class="svg-container" href="#"
+                ><img class="svg" src="./assets/images/earth.svg" alt="earth"
+              /></a>
+            </li>
+            <li class="social-link">
+              <a class="svg-container" href="#"
+                ><img
+                  class="svg"
+                  src="./assets/images/linkedin.svg"
+                  alt="linkedin"
+              /></a>
+            </li>
+            <li class="social-link">
+              <a class="svg-container" href="#"
+                ><img
+                  class="svg"
+                  src="./assets/images/facebook.svg"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li class="social-link">
+              <a class="svg-container" href="#"
+                ><img
+                  class="svg"
+                  src="./assets/images/twitter.svg"
+                  alt="twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="content">
+          <span class="important-text">Skilled Java Developer</span> with proven
+          experiense in delivering large-scale software products. An impeccable
+          knowladge and skills of creating disributed, robust and scalable
+          server-side applications. Experienced in the use of CQRS, Event
+          Sourcing, Domaon-Driven Design for real-world high-loaded projects.
+          Always focused on goals and delivering success to rapidly evolving and
+          dynamic environments.
+        </p>
+      </section>
+      <section class="section skills">
+        <div class="section-heading">
+          <h2 class="important-text">skills</h2>
+        </div>
+        <article class="article-wrapper">
+          <h3 class="important-text">tech stack</h3>
+          <p class="skill-content content">
+            Java, Kotlin, Scala, Spring, Java EE, AxonFramework, Hibernate,
+            Kafka, Redis, Docker, Kubernetes
+          </p>
+        </article>
+        <article class="article-wrapper">
+          <h3 class="important-text">databases</h3>
+          <ul class="list content">
+            <li>
+              <span class="important-text">SQL:</span> Oracle 12c, MS SQL Server, MySQL, MariaDB,
+              PostgreSQL, DB2
+            </li>
+            <li><span class="important-text">NoSQL:</span> MongoDB</li>
+          </ul>
+        </article>
+        <article class="article-wrapper">
+          <h3 class="important-text">environment & tools</h3>
+          <p class="content">
+            Windows, Centos, Debian, Alpine, Intellij IDEA, Ant, Maven, Gradle,
+            TeamCity, Jenkins
+          </p>
+        </article>
+      </section>
+      <section class="section experience">
+        <div class="section-heading">
+          <h2 class="important-text">experience</h2>
+        </div>
+        <h2 class="important-text heading">scalified LLC</h2>
+        <article class="article-wrapper">
+          <h3 class="important-text">
+            lead backend Engineer • Sep, 2016 - present
+          </h3>
+          <ul class="list content">
+            <li>
+              Planned and implemented the migration of company products into a
+              microservices architecture
+            </li>
+            <li>
+              Designed and implemented a high-performance Logstash and
+              Elasticsearch monitoring system, which processed over 3000 metric
+              events per second
+            </li>
+            <li>
+              Cofigured and maintained fully automated continuous delivery
+              processes within the company
+            </li>
+            <li>
+              Established and managed a strong, motivated and result focused
+              backend team
+            </li>
+          </ul>
+        </article>
+      </section>
     </div>
   </body>
 </html>
